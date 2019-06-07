@@ -1,0 +1,184 @@
+@media only screen and (max-width: 1340px) {
+    .table {
+        width: auto;
+   }
+
+    #list-3 {
+        display: none;
+    }
+
+    .projects {
+        transform: scale(.9);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #cards-wrapper {
+        width: 400px;
+    }
+
+    #card-2 {
+        left: 40px;
+    }
+
+    #card-3 {
+        left: 80px;
+    }
+
+    .project {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .feature {
+        width: auto;
+    }
+
+    .projects {
+        transform: scale(.9);
+        width: auto;
+    }
+
+    .projects-wrapper {
+        width: 250px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    #list-2 {
+        display: none;
+    }
+
+    #project-4 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #slogan h1 {
+        font-size: 2rem;
+    }
+    
+    .feature h1 {
+        font-size: 2rem;
+    }
+
+    #cards-wrapper {
+        width: 300px;
+    }
+    
+    #card-2 {
+        left: 15px;
+    }
+
+    #card-3 {
+        left: 30px;
+    }
+
+    #project-3 {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 470px) {
+    #slogan {
+        margin-bottom: 10px;
+    }
+    #slogan h1 {
+        font-size: 2rem;
+    }
+
+    #features-boards {
+        padding-left: 0;
+    }
+
+    .card-and-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    #title-row {
+        padding-bottom: 30px;
+    }
+
+    .list {
+        max-height: 335px;
+    }
+
+    #features-cards {
+        min-height: 150px;
+    }
+
+    .features {
+        margin-left: 2.5%;
+        width: 95%;
+        margin-bottom: 30px;
+    }
+
+    #cards-wrapper {
+        width: 300px;
+    }
+
+    #card-2 {
+        left: 20px;
+    }
+
+    #card-3 {
+        left: 40px;
+    }
+
+    .feature, .feature-info {
+        transition: 1s ease;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .table {
+        transform: scale(.9);
+    }
+
+    .projects {
+        transform: scale(.9);
+        width: auto;
+    }
+
+    .table {
+        width: auto;
+        transform: scale(.9);
+    }
+
+    #list-2, #list-3 {
+        display: none;
+    }
+
+    .table-members img {
+        transform: scale(.8);
+    }
+
+    .table-members:hover > img {
+        margin-left: -8px;
+    }
+
+    .project {
+        width: auto;
+        padding: 0;
+        height: 120px;
+    }
+
+    .project-members {
+        margin-top: 10px;
+    }
+}

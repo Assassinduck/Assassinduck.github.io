@@ -1,0 +1,23 @@
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 140px;
+    padding-bottom: 30px;
+    max-width: 500px;
+}

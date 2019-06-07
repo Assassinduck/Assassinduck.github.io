@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link id="highContrast" rel="stylesheet" type="text/css">
+    <link id="normalContrast" rel="stylesheet" type="text/css" href="style/board.css">
+    <link rel="stylesheet" type="text/css" href="style/header.css">
+    <link rel="icon" type="icon/png" href="assets/img/logo.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+    <title>TrellTwo | My boards</title>
+</head>
+
+<body>
+    <div id="high-contrast">
+            <label><input id="contrastToggle" type="checkbox" value="High contrast"
+                onchange="swapStyleSheet('style/high-contrast-boards.css')">High contrast</label>
+    </div>
+
+    <!--Header-->
+    <header>
+        <div id="logo">
+            <a href="projects.html"><img src="assets/img/logo.png"></a>
+        </div>
+        <div class="members-in-project" id="addMember">
+                <img id="addMemberIcon" onclick="submitMember()" alt="Add member" src="assets/img/icon.svg">
+                <input onkeypress="enterMember(event)" placeholder="Search name or email" id="submitMemberInput">
+            </div>
+    </header>
+    <!--/Header-->
+
+    <!--Project container-->
+    <div class="project">
+        <div id="members"></div>
+        <div class="project-header" id="project-header">
+            
+            <button class="new-board-btn" id="newBoardBtn">
+                <h3>+ New board</h3>
+            </button>
+        </div>
+
+        <div class="boards-wrapper" id="boards-wrapper">
+
+        </div>
+    </div>
+    <!--/Project container-->
+
+    <script src="script/boards.js"></script>
+    <script src="script/addMember.js"></script>
+    <script src="script/highContrastBoards.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+ * {
+     box-sizing: border-box;
+ }
+
+body {
+    background: white;
+    overflow-x: hidden;
+}
+
+#high-contrast {
+    width: 100vw;
+    padding: 2.5px 0;
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    border-bottom: 1px solid #FECC00;
+}
+
+#high-contrast label {
+    font-size: 0.8rem;
+}
+
+#high-contrast label:hover {
+    cursor: pointer;
+}
+
+#high-contrast input {
+    display: none;
+}
+
+.project-header {
+    position: relative;
+    width: 100%;
+    background: rgb(255,100,100);
+    background: linear-gradient(48deg, rgba(255,100,100,1) 0%, rgba(235,255,125,1) 100%); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    padding-bottom: 145px;
+    padding-top: 60px;
+    color: white;
+}
+
+.project-header input {
+    background: transparent;
+    text-align: center;
+    color: white;
+    width: 100%;
+    border: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3)
+}
+
+.new-board-btn {
+    background: #24195C;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    bottom: -20px;
+}
+
+.new-board button {
+    font-weight: 500;
+}
+
+button {
+    width: 200px;
+    border: none;
+    color: inherit;
+}
+
+.boards-wrapper {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.board {
+    position: relative;
+    width: calc(25% - 40px);
+    min-width: 200px;
+    margin: 10px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    background: rgb(19, 132, 224);
+}
+
+.board input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.board button {
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 5px 5px;
+    background-color: red;
+    width: 100%;
+    border: none;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#addMember {
+    position: absolute;
+    left: 52.7%;
+    top: 120px;
+    transform: translateX(-50%);
+    width: 40px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+    background-color: #24195C;
+    height: 40px !important;
+    border-radius: 10px;
+}
+
+
+#addMember:hover {
+    width: 220px;
+    transform: translateX(calc(width - 50%))
+}
+
+#addMemberIcon {
+    padding: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+#addMemberIcon:hover {
+    cursor: pointer;
+}
+
+#submitMemberInput {
+    position: absolute;
+    left: 100%;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+#addMember:hover #submitMemberInput {
+    left: 18%;
+}
+
+#submitMemberInput:active {
+    outline:none !important;
+}
+
+#submitMemberInput::placeholder {
+    color: white;
+}
+
+#members {
+    position: absolute;
+    display: flex;
+    top: 181px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.memberImageContainer {
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin: 0px 5px;
+}
+
+.memberImage {
+    height: 40px;
+}
+
+.display{
+    display: block;
+}

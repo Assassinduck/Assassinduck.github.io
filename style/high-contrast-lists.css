@@ -1,0 +1,562 @@
+wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-top: 140px;
+    padding-left: 20px;
+    overflow: auto;
+    min-height: calc(100vh - 140px);
+}
+
+header {
+    background: black;
+    justify-content: space-between;
+}
+
+#high-contrast {
+    width: 100vw;
+    padding: 2.5px 0;
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    color: #FECC00;
+    border-bottom: 1px solid #FECC00;
+}
+
+#high-contrast label {
+    font-size: 0.8rem;
+}
+
+#high-contrast label:hover {
+    cursor: pointer;
+}
+
+#high-contrast input {
+    display: none;
+}
+
+.board-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.board-info h3 {
+    justify-self: right;
+    color: #FECC00;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.board-title {
+    background-color: transparent;
+    color: white;
+    font-size: 1.8rem;
+    border: none;
+    font-weight: 700;
+}
+
+#board-title {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.board-members {
+    cursor: default;
+    right: 15px;
+}
+
+.board-members:hover>img {
+    margin-left: 0px;
+}
+
+.board-members img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    transition: .3s ease-in-out;
+    margin-left: -17px;
+    background-color: white;
+    border: 3px solid white;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#lag-liste {
+    position: relative;
+    top: 75px;
+}
+
+#nyListeKnapp {
+    cursor: pointer;
+    padding: 10px;
+    background-color: black;
+    border-radius: 50px;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 2px solid #FECC00;
+}
+
+#nyListeKnapp p {
+    color: #FECC00;
+    font-weight: 600;
+}
+
+#lister {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: -10px;
+
+}
+
+.slettListe {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    padding:10px;
+    border: none;
+    border-radius: 0 5px 0 0;
+    background-color: red;
+    color: white;
+}
+
+.leggTilKort {
+    cursor: pointer;
+    background: black;
+    color: #FECC00;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.liste {
+    position: relative;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+.list-title {
+    background: transparent;
+    border: none;
+    color: #FECC00;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card-members img,
+.card-maker img,
+.card-desc img,
+.card-created img,
+.card-deadline img {
+    height: 25px;
+    width: 25px;
+    border-radius: 30px;
+}
+
+.card-members {
+    cursor: default;
+}
+
+.card-members:hover>img {
+    margin-right: -5px;
+}
+
+.card-members img {
+    height: 20px;
+    width: 20px;
+    transition: .3s ease-in-out;
+    margin-right: 0px;
+    background-color: yellowgreen;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-title,
+.card-maker,
+.card-member-select,
+.card-desc,
+.card-members,
+.card-created,
+.card-deadline,
+.card-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-title {
+    border-radius: 5px 5px 0 0;
+    order: 1;
+    background: black;
+    position: relative;
+}
+
+.card-title input {
+    width: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-title input::placeholder {
+    opacity: 1;
+    color: #FECC00;
+}
+
+.nyttKortInput {
+    border: none;
+    border-radius: 0;
+    order: 1;
+    width: 290px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.openDialog .card-desc{
+    border-top: 1px solid black;
+    width: 290px;
+    padding: 5px;
+}
+
+.openDialog input[type="button"] {
+    cursor: pointer;
+    width: 300px;
+    background-color: black;
+    margin-bottom: 0;
+    color: white;
+    border-radius: 0 0 3px 3px;
+    transition: .3s ease;
+}
+
+.openDialog input[type="button"]:hover {
+    background-color: black;
+}
+
+.openDialog input[type="date"]{
+    cursor: pointer;
+}
+
+.card-desc {
+    order: 2;
+    display: block;
+    flex-direction: column;
+}
+
+.card-desc textarea {
+    border: none;
+    width: 100%;
+    max-height: 340px;
+    resize: none;
+    color: black;
+    order: 2;
+}
+
+.card-maker {
+    order: 3;
+}
+
+.card-member-select {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+.card-member {
+    background-color: black;
+    position: relative;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.card-member img{
+    border: none;
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+
+.card-deadline {
+    cursor: default;
+    order: 4;
+    width: 95%;
+}
+
+.card-member-select {
+    text-transform: capitalize;
+    order: 6;
+}
+
+.card-member-select input {
+    width: 100%;
+    font-weight: 600;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border: none;
+    border-radius: 0 0 5px 5px;
+    text-transform: uppercase;
+}
+
+.card-members {
+    width: 100%;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 5;
+
+}
+
+.card-members p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    padding-left: 3px;
+    padding-right: 35px;
+}
+
+select {
+    border-radius: 5px 5px 0 0;
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none; 
+   border: 2px solid black;
+   max-height: 170px;
+   width: 100%;
+   overflow: hidden;
+}
+
+option {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    padding-left: 2px;
+}
+
+.member-select {
+    margin-top: 5px;
+    order: 3;
+}
+
+.add-member {
+    cursor: pointer;
+    order: 2;
+}
+
+.members {
+    order: 1;
+}
+
+.card-created {
+    cursor: default;
+    order: 7;
+    padding: 0;
+    padding-left: 2.5%;
+    padding-top: 5px;
+
+}
+
+.card-created h3 {
+    font-size: .8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.card-footer {
+    position: relative;
+    order: 8;
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-footer input {
+    border: 1px solid black;
+    font-size: .9rem;
+}
+
+.card p {
+    margin-left: 10px;
+    color: #FECC00;
+}
+
+[id*="nyttKortBeskrivelse"] {
+    display: none;
+    resize: none;
+    border: none;
+}
+
+.forrige-liste, .neste-liste, .lukkKort {
+    width: 33.3%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    background: black;
+    color: #FECC00;
+    transition: .3s ease;
+    font-weight: 600;
+}
+
+.forrige-liste:hover, .neste-liste:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.forrige-liste {
+    order: 1;
+    border-radius: 0 0 0 5px;
+}
+
+.lukkKort {
+    order: 2;
+    background: red;
+    color: white;
+}
+
+.lukkKort:hover {
+    background: rgb(179, 2, 2);
+}
+
+.neste-liste {
+    order: 3;
+    border-radius: 0 0 5px 0;
+}
+
+.forrige-liste::content {
+    content: "Hei" !important;
+}
+
+.slettListe {
+    display: block;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    z-index: 998;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+}
+
+.openDialog {
+    background: white;
+    width: 300px;
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px black;
+    border-radius: 3px;
+}
+
+.openDialog .slettListe{
+    display: none;
+}
+
+.nyttKortInput, .make-card-container {
+    display: none;
+}
+
+.bg-red {
+    background: rgb(122, 4, 4);
+    background: linear-gradient(20deg, rgba(122, 4, 4, 1) 0%, rgba(252, 69, 69, 1) 100%);
+}
+
+.bg-orange {
+    background: rgb(211, 133, 30);
+    background: linear-gradient(20deg, rgba(243, 149, 42, 1) 0%, rgb(252, 213, 108) 100%);
+}
+
+.bg-green {
+    background: rgb(63, 133, 16);
+    background: linear-gradient(20deg, rgba(63, 133, 16, 1) 0%, rgb(170, 255, 144) 100%);
+}
+
+.card-priority-picker {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+.card-priority-picker input {
+    display: none;
+}
+
+.priority-container {
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin-top: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.1);
+}
+
+.card-priority-picker label {
+    position: absolute;
+    top: 13%;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
